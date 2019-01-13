@@ -10,7 +10,7 @@ import UIKit
 
 class MoodViewController: UITableViewController {
 
-    let itemArray = ["Jan 1", "Jan 2", "Jan 3"]
+    var itemArray = ["Jan 1"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,13 +53,25 @@ class MoodViewController: UITableViewController {
     // Add new entry to journal (Moody)
     @IBAction func composeButtonPressed(_ sender: UIBarButtonItem) {
         
+        // create local variable within this sope
+        var textField = UITextField()
+        
         let alert = UIAlertController(title: "Add New Entry", message: "", preferredStyle: .alert )
         
         let action = UIAlertAction(title: "Add Entry", style: .default) { (action) in
             // What happens when user adds a new entry to their journal
             // should also have a mood selector on entry
             
-            print("Entry added")
+            self.itemArray.append(textField.text!)
+            
+        }
+        
+        alert.addTextField { (alertTextField) in
+            // some grayed out text to let users know what to do
+            alertTextField.placeholder = "Record a mood"
+            textField = alertTextField
+            
+            
         }
         
         alert.addAction(action)
