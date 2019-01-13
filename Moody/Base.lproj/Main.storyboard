@@ -13,20 +13,20 @@
         <scene sceneID="X7Q-HC-o3N">
             <objects>
                 <tableViewController id="4tW-Wa-maw" customClass="MoodViewController" customModule="Moody" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="lZi-uT-X5V">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="lZi-uT-X5V">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MoodItemCell" textLabel="P2T-0j-KVY" rowHeight="65" style="IBUITableViewCellStyleDefault" id="Daq-7B-a1K">
-                                <rect key="frame" x="0.0" y="28" width="375" height="65"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MoodItemCell" textLabel="P2T-0j-KVY" rowHeight="51" style="IBUITableViewCellStyleDefault" id="Daq-7B-a1K">
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="51"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Daq-7B-a1K" id="zFU-Dy-dAV">
-                                    <rect key="frame" x="0.0" y="0.0" width="341" height="64.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="50.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P2T-0j-KVY">
-                                            <rect key="frame" x="16" y="0.0" width="324" height="64.5"/>
+                                            <rect key="frame" x="16" y="0.0" width="324" height="50.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -41,7 +41,17 @@
                             <outlet property="delegate" destination="4tW-Wa-maw" id="eTr-3l-PTu"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Moody" id="fmT-vb-vqM"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Moody" id="fmT-vb-vqM">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="compose" id="gzc-Nt-YCe">
+                            <inset key="largeContentSizeImageInsets" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="composeButtonPressed:" destination="4tW-Wa-maw" id="Jiw-TR-V1X"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gl7-G8-HcH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,9 +62,10 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EDA-y6-gUt" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="4UL-H2-tYH">
-                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4UL-H2-tYH">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
                         <color key="barTintColor" red="0.091419622699999994" green="0.42419775310000002" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -50,5 +50,22 @@ class MoodViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
+    // Add new entry to journal (Moody)
+    @IBAction func composeButtonPressed(_ sender: UIBarButtonItem) {
+        
+        let alert = UIAlertController(title: "Add New Entry", message: "", preferredStyle: .alert )
+        
+        let action = UIAlertAction(title: "Add Entry", style: .default) { (action) in
+            // What happens when user adds a new entry to their journal
+            // should also have a mood selector on entry
+            
+            print("Entry added")
+        }
+        
+        alert.addAction(action)
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
 }
 
