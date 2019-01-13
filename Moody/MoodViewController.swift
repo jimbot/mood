@@ -38,7 +38,16 @@ class MoodViewController: UITableViewController {
     // TableView Delegate Methods
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath:
         IndexPath) {
-        print(itemArray[indexPath.row])
+        //print(itemArray[indexPath.row])
+        
+        // = is assignment; == is used for checking
+        if tableView.cellForRow(at: indexPath)?.accessoryType == .checkmark {
+            tableView.cellForRow(at: indexPath)?.accessoryType = .none
+        } else {
+            tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+        }
+        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
 }
