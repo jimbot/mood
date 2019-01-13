@@ -10,7 +10,7 @@ import UIKit
 
 class MoodViewController: UITableViewController {
 
-    let itemArray = ["Buy eggs", "Buy Cheese", "Buy Ham"]
+    let itemArray = ["Jan 1", "Jan 2", "Jan 3"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +42,7 @@ class MoodViewController: UITableViewController {
         
         // = is assignment; == is used for checking
         if tableView.cellForRow(at: indexPath)?.accessoryType == .checkmark {
-            tableView.cellForRow(at: indexPath)?.accessoryType = .none
+            tableView.cellForRow(at: indexPath)?.accessoryType = .disclosureIndicator
         } else {
             tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
         }
