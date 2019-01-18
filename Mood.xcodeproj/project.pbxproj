@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A63AD9421EAC03F002650FC /* Moody.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moody.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A63AD9421EAC03F002650FC /* Mood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A63AD9721EAC03F002650FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A63AD9921EAC03F002650FC /* MoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodViewController.swift; sourceTree = "<group>"; };
 		1A63AD9C21EAC03F002650FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,7 +38,7 @@
 		1A63AD8B21EAC03F002650FC = {
 			isa = PBXGroup;
 			children = (
-				1A63AD9621EAC03F002650FC /* Moody */,
+				1A63AD9621EAC03F002650FC /* Mood */,
 				1A63AD9521EAC03F002650FC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,12 +46,12 @@
 		1A63AD9521EAC03F002650FC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1A63AD9421EAC03F002650FC /* Moody.app */,
+				1A63AD9421EAC03F002650FC /* Mood.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1A63AD9621EAC03F002650FC /* Moody */ = {
+		1A63AD9621EAC03F002650FC /* Mood */ = {
 			isa = PBXGroup;
 			children = (
 				1A63AD9721EAC03F002650FC /* AppDelegate.swift */,
@@ -61,15 +61,15 @@
 				1A63ADA021EAC040002650FC /* LaunchScreen.storyboard */,
 				1A63ADA321EAC040002650FC /* Info.plist */,
 			);
-			path = Moody;
+			path = Mood;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1A63AD9321EAC03F002650FC /* Moody */ = {
+		1A63AD9321EAC03F002650FC /* Mood */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A63ADA621EAC040002650FC /* Build configuration list for PBXNativeTarget "Moody" */;
+			buildConfigurationList = 1A63ADA621EAC040002650FC /* Build configuration list for PBXNativeTarget "Mood" */;
 			buildPhases = (
 				1A63AD9021EAC03F002650FC /* Sources */,
 				1A63AD9121EAC03F002650FC /* Frameworks */,
@@ -79,9 +79,9 @@
 			);
 			dependencies = (
 			);
-			name = Moody;
+			name = Mood;
 			productName = Moody;
-			productReference = 1A63AD9421EAC03F002650FC /* Moody.app */;
+			productReference = 1A63AD9421EAC03F002650FC /* Mood.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +99,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1A63AD8F21EAC03F002650FC /* Build configuration list for PBXProject "Moody" */;
+			buildConfigurationList = 1A63AD8F21EAC03F002650FC /* Build configuration list for PBXProject "Mood" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +112,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1A63AD9321EAC03F002650FC /* Moody */,
+				1A63AD9321EAC03F002650FC /* Mood */,
 			);
 		};
 /* End PBXProject section */
@@ -318,7 +318,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A63AD8F21EAC03F002650FC /* Build configuration list for PBXProject "Moody" */ = {
+		1A63AD8F21EAC03F002650FC /* Build configuration list for PBXProject "Mood" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A63ADA421EAC040002650FC /* Debug */,
@@ -327,7 +327,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A63ADA621EAC040002650FC /* Build configuration list for PBXNativeTarget "Moody" */ = {
+		1A63ADA621EAC040002650FC /* Build configuration list for PBXNativeTarget "Mood" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A63ADA721EAC040002650FC /* Debug */,
