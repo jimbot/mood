@@ -10,7 +10,7 @@ import UIKit
 
 class MoodViewController: UITableViewController {
 
-    var itemArray = ["Jan 1"]
+    var itemArray = [""]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,7 +62,11 @@ class MoodViewController: UITableViewController {
             // What happens when user adds a new entry to their journal
             // should also have a mood selector on entry
             
+            // adds our input item into itemArray
             self.itemArray.append(textField.text!)
+            
+            // our item won't actually be displayed until we use this function
+            self.tableView.reloadData()
             
         }
         
