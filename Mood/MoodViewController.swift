@@ -10,11 +10,24 @@ import UIKit
 
 class MoodViewController: UITableViewController {
 
+    // using self, will refer to the MoodViewController
+    // ie. the entire class; itself
+    
     var itemArray = [""]
+    
+    // UserDefaults lets you store key value pairs, persistently, across launches of your app
+    let defaults = UserDefaults.standard
+    // User defaults are saved in plist files
+    // that is why everything needs to be a key value pair
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // if we can cast the array as a string,
+        if let items = defaults.array(forKey: "JournalEntryArray") as? [String] {
+            itemArray = items
+        }
     }
 
     // TableView Datasource Methods
@@ -64,6 +77,9 @@ class MoodViewController: UITableViewController {
             
             // adds our input item into itemArray
             self.itemArray.append(textField.text!)
+            
+            // Save updated itemArray into our user defaults
+            self.defaults.set(self.itemArray, forKey: "JournalEntryArray")
             
             // our item won't actually be displayed until we use this function
             self.tableView.reloadData()
